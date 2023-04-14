@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Chess Reviews</title>
+</head>
+<body>
+    <header>
+        <h1>Hello Chess World</h1>
+        <p> Here you can find users experience about chess, and you can also leave a review of your experience playing chess.</p>
+        <nav>
+            <button><a href="index.html">Home</a></button>
+            <button><a href="info.html">Information</a></button>
+            <button><a href="about.html">About</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <h2>Reviews</h2>
+        <div id="reviews-container"></div>
+            <!-- Reviews will be displayed here -->
+     
+        <!-- Review form -->
+	    <h2>Add a Review</h2>
+	    <form id="review-form">
+		    <label for="review-name">Name:</label>
+		    <input type="text" id="review-name" name="review-name" required>
+
+		    <label for="review-date">Date:</label>
+		    <input type="date" id="review-date" name="review-date" required>
+
+		    <label for="review-rating">Rating:</label>
+	        <select id="review-rating" name="review-rating" required>
+		      <option value="">--Please give a rating--</option>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
+	        </select>
+
+		    <label for="review-text">Review:</label>
+	        <textarea id="review-text" name="review-text" required></textarea>
+	        <button type="submit">Submit</button>
+            </form>
+        </section>
+        
+      <script src="data.js"></script>  
+      <script src="app.js"></script>
+    </body>
+</html>
